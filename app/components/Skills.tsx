@@ -9,8 +9,8 @@ const categories = [
     label: "Programming Languages",
     skills: [
       { name: "JavaScript", level: 90 },
-      { name: "TypeScript", level: 85 },
-      { name: "Python", level: 70 },
+      { name: "TypeScript", level: 10 },
+      { name: "Python", level: 10 },
       { name: "HTML & CSS", level: 95 },
       { name: "SQL", level: 65 },
     ],
@@ -20,9 +20,9 @@ const categories = [
     label: "Frameworks",
     skills: [
       { name: "React", level: 90 },
-      { name: "Next.js", level: 85 },
+      { name: "Next.js", level: 10 },
       { name: "Tailwind", level: 92 },
-      { name: "Framer Motion", level: 75 },
+      { name: "Framer Motion", level: 30 },
     ],
   },
   {
@@ -30,9 +30,9 @@ const categories = [
     label: "Tools",
     skills: [
       { name: "Git", level: 85 },
-      { name: "Figma", level: 80 },
+      { name: "Figma", level: 10 },
       { name: "VS Code", level: 95 },
-      { name: "Docker", level: 50 },
+      { name: "Docker", level: 10},
     ],
   },
 ]
