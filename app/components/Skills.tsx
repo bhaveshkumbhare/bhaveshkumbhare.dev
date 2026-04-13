@@ -42,7 +42,7 @@ export function Skills() {
   const [active, setActive] = useState(categories[0])
 
   return (
-    <section id="skill" className="py-32 px-8 border-t border-white/10">
+    <section id="skills" className="py-32 px-8 border-t border-white/10">
 
       <p className="text-xs tracking-[3px] text-white/30 uppercase mb-16">
         Skills
