@@ -1,11 +1,11 @@
 "use client"
 import { useRef, useState } from "react"
-import { motion, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 import emailjs from "@emailjs/browser"
 
 function RollingText({ text, color }: { text: string; color?: string }) {
   const ref = useRef(null)
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "center center"] })
+  
   const letters = text.split("")
   const mid = Math.floor(letters.length / 2)
   return (
@@ -119,7 +119,7 @@ export function ContactUs() {
             viewport={{ once: true }}
             style={{ fontSize: 14, color: "rgba(245,245,240,0.4)", lineHeight: 1.8, marginBottom: 40, maxWidth: 400 }}
           >
-            Open to freelance projects, full-time roles, and interesting collaborations. Let's build something great together.
+            Open to freelance projects, full-time roles, and interesting collaborations. Let build something great together.
           </motion.p>
 
           {/* Email with copy */}
@@ -183,7 +183,7 @@ export function ContactUs() {
             >
               <p style={{ fontSize: 28, marginBottom: 12 }}>✅</p>
               <p style={{ fontSize: 16, color: "#4ade80", fontWeight: 600, marginBottom: 8 }}>Message sent!</p>
-              <p style={{ fontSize: 13, color: "rgba(245,245,240,0.4)" }}>Thanks for reaching out. I'll reply to your email shortly.</p>
+              <p style={{ fontSize: 13, color: "rgba(245,245,240,0.4)" }}>Thanks for reaching out. I will reply to your email shortly.</p>
               <motion.button
                 onClick={() => setStatus("idle")}
                 whileHover={{ opacity: 0.8 }}

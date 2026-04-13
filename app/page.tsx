@@ -4,7 +4,7 @@
 import { useEffect, useState } from "react"
 import { AnimatePresence } from "framer-motion"
 import Preloader from "./components/Preloader"
-import { TextRoll } from "@/components/ui/skiper-ui/skiper58"
+
 import { Navbar } from "./components/Navbar"
 import { Hero } from "./components/Hero"
 import { Projects } from "./components/Projects"

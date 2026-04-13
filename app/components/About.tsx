@@ -1,7 +1,8 @@
 "use client"
 import { useEffect, useRef, useState } from "react"
 import { motion, useInView, useScroll, useTransform } from "framer-motion"
-import Image from "next/image";
+
+
 
 function RollingText({ text, color }: { text: string; color?: string }) {
   const ref = useRef(null)
@@ -151,7 +152,7 @@ export function About() {
                 style={{ padding: "20px 14px", borderRight: "1px solid rgba(255,255,255,0.08)", borderBottom: "1px solid rgba(255,255,255,0.08)" }}
               >
                 <div style={{ fontSize: "clamp(24px, 2.5vw, 38px)", fontWeight: 700, letterSpacing: "-2px", color: "#f5f5f0", marginBottom: 4 }}>
-                  <AnimatedNumber value={s.value} suffix={s.suffix} />
+                 <AnimatedNumber value={Number(s.value)} suffix={s.suffix} />
                 </div>
                 <div style={{ fontSize: 10, color: "rgba(245,245,240,0.28)", letterSpacing: "0.5px", lineHeight: 1.4 }}>{s.label}</div>
               </motion.div>

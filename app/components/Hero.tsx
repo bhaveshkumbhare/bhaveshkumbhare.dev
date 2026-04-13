@@ -1,10 +1,11 @@
 "use client"
-import { motion } from "framer-motion"
+import { motion , Variants } from "framer-motion"
 import { Marquee } from "../components/Marquee"
 import Image from "next/image"
 
+
 const container = { hidden: {}, show: { transition: { staggerChildren: 0.12, delayChildren: 0.3 } } }
-const line = { hidden: { y: 80, opacity: 0 }, show: { y: 0, opacity: 1, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } } }
+const line : Variants = { hidden: { y: 80, opacity: 0 }, show: { y: 0, opacity: 1, transition: { duration: 0.8, ease: "easeOut" } } }
 
 export function Hero() {
   return (
